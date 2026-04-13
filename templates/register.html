@@ -4,39 +4,49 @@
 <div class="container vh-100 d-flex justify-content-center align-items-center">
     
     <div class="col-md-6 col-lg-4">
-        <div class="card shadow p-4">
+        <div class="card shadow">
 
-            <h2 class="text-center mb-4">Register</h2>
+            <!-- Header -->
+            <div class="card-header text-center bg-dark text-white">
+                <h4 class="mb-0">CampusPoint</h4>
+            </div>
 
-            {% from "includes/_formhelpers.html" import render_field %}
+            <!-- Body -->
+            <div class="card-body p-4">
 
-            <form method="POST" action="">
-                
-                <div class="mb-3">
-                    {{ render_field(form.name, class="form-control") }}
-                </div>
+                <h2 class="text-center mb-4">Register</h2>
 
-                <div class="mb-3">
-                    {{ render_field(form.email, class="form-control") }}
-                </div>
+                {% from "includes/_formhelpers.html" import render_field %}
 
-                <div class="mb-3">
-                    {{ render_field(form.username, class="form-control") }}
-                </div>
+                <form method="POST" action="">
+                    
+                    <div class="mb-3">
+                        {{ render_field(form.name, class="form-control") }}
+                    </div>
 
-                <div class="mb-3">
-                    {{ render_field(form.password, class="form-control") }}
-                </div>
+                    <div class="mb-3">
+                        {{ render_field(form.email, class="form-control") }}
+                    </div>
 
-                <div class="mb-3">
-                    {{ render_field(form.confirm, class="form-control") }}
-                </div>
+                    <div class="mb-3">
+                        {{ render_field(form.username, class="form-control") }}
+                    </div>
 
-                <button type="submit" class="btn btn-dark w-100">
-                    Register
-                </button>
+                    <div class="mb-3">
+                        {{ render_field(form.password, class="form-control") }}
+                    </div>
 
-            </form>
+                    <div class="mb-3">
+                        {{ render_field(form.confirm, class="form-control") }}
+                    </div>
+
+                    <button type="submit" class="btn btn-dark w-100">
+                        Register
+                    </button>
+
+                </form>
+
+            </div>
 
         </div>
     </div>

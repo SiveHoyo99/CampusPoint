@@ -7,7 +7,7 @@
         <div class="card shadow-lg border-0">
 
             <!-- HEADER -->
-            <div class="text-center py-3" style="background: #0d3b66; color: white; border-radius: 10px 10px 0 0;">
+            <div class="text-center py-3" style="background: #000000; color: white; border-radius: 10px 10px 0 0;">
                 <h4 class="mb-0">CampusPoint</h4>
             </div>
 
@@ -34,20 +34,15 @@
                                class="form-control"
                                placeholder="Enter your password">
 
-                        <!-- Toggle icon -->
-                        <span onclick="togglePassword()"
-                              style="position:absolute; right:10px; top:38px; cursor:pointer;">
-                            👁️
-                        </span>
                     </div>
 
-                    <!-- LOGIN BUTTON -->
+                    
                     <button type="submit" class="btn w-100"
-                            style="background:#0d3b66; color:white;">
+                            style="background:#000000; color:white;">
                         Log in
                     </button>
 
-                    <!-- EXTRA LINKS -->
+                  
                     <div class="text-center mt-3">
                         <a href="#" style="font-size: 14px;">Forgot your password?</a>
                     </div>
@@ -60,12 +55,6 @@
 
 </div>
 
-<!-- SCRIPT -->
-<script>
-function togglePassword() {
-    const pwd = document.getElementById("password");
-    pwd.type = pwd.type === "password" ? "text" : "password";
-}
-</script>
+
 
 {% endblock %}
