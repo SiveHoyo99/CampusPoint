@@ -43,12 +43,12 @@ CampusPoint is a web-based platform designed to help students explore and naviga
  -cd CampusPoint
 
 2. Set up a virtual environment
- -python -m venv venv
+ - python -m venv venv
  - .\venv\Scripts\activate
 
 3. Install dependencies
- -pip install --upgrade pip
- -pip install -r requirements.txt
+ - pip install --upgrade pip
+ - pip install -r requirements.txt
 
 4. Run File
- -python app.py
+ - python app.py
