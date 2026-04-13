@@ -32,7 +32,7 @@ CampusPoint is a web-based platform designed to help students explore and naviga
 ![CampusPoint](https://github.com/user-attachments/assets/b9275f91-a1a9-488b-a7ec-9d469c1d441f)
 
 ##Upcoming features
-![CampusPoint](https://github.com/user-attachments/assets/08826e0d-c166-44b4-b417-d2d91fb01ec3
+![CampusPoint](https://github.com/user-attachments/assets/08826e0d-c166-44b4-b417-d2d91fb01ec3)
 
 ---
 
