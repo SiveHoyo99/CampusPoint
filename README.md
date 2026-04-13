@@ -1,4 +1,6 @@
 #  CampusPoint
+Status-
+This project is currently under development. New features and improvements are continuously being added.
 
 ##  Overview
 CampusPoint is a web-based platform designed to help students explore and navigate tech career paths within Computer Science and beyond. It provides communities, project ideas, and collaborative groups that enable students to build practical skills and prepare for real-world opportunities in tech.
