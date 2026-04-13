@@ -22,16 +22,16 @@ CampusPoint is a web-based platform designed to help students explore and naviga
 - Bootstrap  
 
 ## Screenshots
-# Homepage
+### Homepage
 ![CampusPoint Screenshot](https://github.com/user-attachments/assets/3cb7dff1-858b-4ebb-bdd3-5ae42fb02103)
 
-# Register page
+### Register page
 ![CampusPoint](https://github.com/user-attachments/assets/e87513dd-99c5-4e4a-925c-0d83b665fc5d)
 
-# Login
+### Login
 ![CampusPoint](https://github.com/user-attachments/assets/b9275f91-a1a9-488b-a7ec-9d469c1d441f)
 
-# Upcoming features
+### Upcoming features
 ![CampusPoint](https://github.com/user-attachments/assets/08826e0d-c166-44b4-b417-d2d91fb01ec3)
 
 ---
