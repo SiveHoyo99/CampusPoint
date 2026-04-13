@@ -1,0 +1,219 @@
+<!-- templates/home.html -->
+{% extends "layout.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+
+{% block body %}
+<div class="p-5 mb-4 text-center" 
+     style="background-color:#dee2e6; border-radius:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+  <h1>Welcome To CampusPoint</h1>
+  <p class="lead">
+    A collaborative hub where students explore tech careers, share knowledge, and build projects together.
+  </p>
+  <a class="btn btn-outline-secondary btn-lg">Explore Resources</a>
+</div>
+<div class="carousel-container">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Navigation dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="{{ url_for('static', filename='images/study1.jpg') }}" class="d-block w-100">
+
+      <div class="carousel-caption">
+        <h3>Study Resources</h3>
+        <p>Learn together with curated guides, tutorials, and shared notes for software development, data science, and AI engineering.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="{{ url_for('static', filename='images/study2.jpg') }}" class="d-block w-100">
+
+      <div class="carousel-caption">
+        <h3>Student Tools</h3>
+        <p>Organize your learning with project boards, coding challenges, and productivity tools designed for aspiring tech professionals.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="{{ url_for('static', filename='images/study3.jpg') }}" class="d-block w-100">
+
+      <div class="carousel-caption">
+        <h3>Career Growth</h3>
+        <p>Connect with mentors, discover internships, and gain real-world experience through collaborative projects.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="container mt-5">
+<div class="row">
+
+<div class="col-md-4">
+    <div class="card shadow-sm text-center">
+        <div class="card-body">
+
+            <i class="bi bi-book feature-icon" style="font-size:40px;"></i>
+
+            <h5 class="mt-3">Study Resources</h5>
+
+            <p>Access coding tutorials, project templates, and shared learning materials to strengthen your skills.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card shadow-sm text-center">
+        <div class="card-body">
+
+            <i class="bi bi-chat-dots feature-icon" style="font-size:40px;"></i>
+
+            <h5 class="mt-3">Student Discussions</h5>
+
+            <p>Join forums and discussions to ask questions, share insights, and brainstorm ideas with peers.</p>
+
+        </div>    
+    </div>   
+</div> 
+
+<div class="col-md-4">
+    <div class="card shadow-sm text-center">
+        <div class="card-body">
+
+            <i class="bi bi-award feature-icon" style="font-size:40px;"></i>
+
+            <h5>Community Highlights</h5>
+            <p>Celebrate student achievements, featured projects, and collaborative success stories.</p>
+            
+        </div>    
+    </div>   
+</div> 
+
+</div>   
+</div> 
+{% if session.logged_in %}
+  <div class="container mt-5">
+    <h3 class="text-center mb-4">Build & Learn Together</h3>
+    <p class="text-center text-muted">
+      Work together, share knowledge, and build real-world tech projects.
+    </p>
+
+    <div class="row">
+      <!-- Project Boards -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-kanban" style="font-size:40px; color:#6c63ff;"></i>
+            <h5 class="mt-3">Project Boards</h5>
+            <p class="text-muted">
+              Collaborate on coding, data science, and AI projects with peers.
+            </p>
+            <a href="/projects" class="btn btn-outline-secondary">Explore Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Study Groups -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-people" style="font-size:40px; color:#17a2b8;"></i>
+            <h5 class="mt-3">Study Groups</h5>
+            <p class="text-muted">
+              Form teams to learn new skills, practice coding, and prepare for interviews.
+            </p>
+            <a href="/groups" class="btn btn-outline-secondary">Join a Group</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q&A Forum -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-chat-dots" style="font-size:40px; color:#28a745;"></i>
+            <h5 class="mt-3">Q&A Forum</h5>
+            <p class="text-muted">
+              Ask questions, share advice, and explore different tech career paths.
+            </p>
+            <a href="/forum" class="btn btn-outline-secondary">Visit Forum</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% else %} 
+   <div class="container mt-5">
+    <h3 class="text-center mb-4">Build & Learn Together</h3>
+    <p class="text-center text-muted">
+      Work together, share knowledge, and build real-world tech projects.
+    </p>
+
+    <div class="row">
+      <!-- Project Boards -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-kanban" style="font-size:40px; color:#6c63ff;"></i>
+            <h5 class="mt-3">Project Boards</h5>
+            <p class="text-muted">
+              Collaborate on coding, data science, and AI projects with peers.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Study Groups -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-people" style="font-size:40px; color:#17a2b8;"></i>
+            <h5 class="mt-3">Study Groups</h5>
+            <p class="text-muted">
+              Form teams to learn new skills, practice coding, and prepare for interviews.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Q&A Forum -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-chat-dots" style="font-size:40px; color:#28a745;"></i>
+            <h5 class="mt-3">Q&A Forum</h5>
+            <p class="text-muted">
+              Ask questions, share advice, and explore different tech career paths.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endif %}  
+
+
+<footer class="text-center mt-5 p-4 bg-light">
+    <p>&copy; 2026 CampusPoint</p>
+    <P>Empowering students to learn, collaborate, and innovate in technology.</P>
+
+</footer>
+{% endblock %}

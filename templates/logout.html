@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card shadow p-4 text-center">
+
+            <h3 class="mb-3">Logout</h3>
+            <p class="text-muted">Are you sure you want to log out?</p>
+
+            <div class="d-grid gap-2 mt-3">
+                <a href="/confirm-logout" class="btn btn-danger">Yes, Logout</a>
+                <a href="/dashboard" class="btn btn-secondary">Cancel</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
