@@ -39,16 +39,16 @@ CampusPoint is a web-based platform designed to help students explore and naviga
 ##  Installation & Setup
 
 1. Clone the repository
-git clone https://github.com/SiveHoyo99/campuspoint.git
-cd CampusPoint
+ -git clone https://github.com/SiveHoyo99/campuspoint.git
+ -cd CampusPoint
 
 2. Set up a virtual environment
-python -m venv venv
-.\venv\Scripts\activate
+ -python -m venv venv
+ - .\venv\Scripts\activate
 
 3. Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
+ -pip install --upgrade pip
+ -pip install -r requirements.txt
 
 4. Run File
-python app.py
+ -python app.py
