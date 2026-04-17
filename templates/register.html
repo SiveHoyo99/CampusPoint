@@ -20,24 +20,25 @@
 
                 <form method="POST" action="">
                     
+                    
                     <div class="mb-3">
-                        {{ render_field(form.name, class="form-control") }}
+                        {{ render_field(form.name, class="form-control", placeholder="Enter your name") }}
                     </div>
 
                     <div class="mb-3">
-                        {{ render_field(form.email, class="form-control") }}
+                        {{ render_field(form.email, class="form-control", placeholder="Enter your email") }}
                     </div>
 
                     <div class="mb-3">
-                        {{ render_field(form.username, class="form-control") }}
+                        {{ render_field(form.username, class="form-control", placeholder="Enter username") }}
                     </div>
 
                     <div class="mb-3">
-                        {{ render_field(form.password, class="form-control") }}
+                        {{ render_field(form.password, class="form-control", placeholder="Enter password") }}
                     </div>
 
                     <div class="mb-3">
-                        {{ render_field(form.confirm, class="form-control") }}
+                        {{ render_field(form.confirm, class="form-control", placeholder="Confirm password") }}
                     </div>
 
                     <button type="submit" class="btn btn-dark w-100">
